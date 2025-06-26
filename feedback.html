@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MCU Feedback Form</title>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        body {
+            background-image: url('/images/thanos.png');
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 150px auto;
+            background-color:rgb(0,0,0,0.9);
+            padding: 20px;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .rating label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/bklogo.jpg" style="width: 70px; height: 40px;">
+                <span>Avengers</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="char.html">Character</a></li>
+                    <li><a href="mcu.html">Movies</a></li>
+                    <li><a href="feedback.html">FeedBack</a></li>
+                </ul>
+            </nav>
+    <a href="login.html" class="btn-reservation">login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Marvel Avengers Feedback Form</h2>
+
+        <form>
+            <label>User Name:</label>
+            <input type="text" name="username" placeholder="Enter your username" required>
+
+            <label>Select MCU Movies:</label>
+            <select name="movies" >
+                <option value="iron_man">Iron Man (2008)</option>
+                <option value="avengers">The Avengers (2012)</option>
+                <option value="civil_war">Captain America: Civil War (2016)</option>
+                <option value="infinity_war">Avengers: Infinity War (2018)</option>
+                <option value="endgame">Avengers: Endgame (2019)</option>
+            </select>
+
+            <label>Rate the Movie out of 5 :</label>
+            <div class="rating">
+                <input type="radio" name="rate"> 1 &nbsp
+                <input type="radio" name="rate"> 2 &nbsp;
+                <input type="radio" name="rate"> 3 &nbsp;
+                <input type="radio" name="rate"> 4 &nbsp;
+                <input type="radio" name="rate"> 5 &nbsp;
+            </div>
+
+            <label>Your Feedback:</label>
+            <textarea name="comments" rows="4" placeholder="Leave your feedback here..."></textarea>
+
+            <input type="submit" value="Submit Feedback" class="submit-btn">
+        </form>
+    </div>
+
+</body>
+</html>
