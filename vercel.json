@@ -5,12 +5,5 @@
       "source": "/",
       "destination": "/home.html"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/home.html",
-      "permanent": true
-    }
   ]
 }
